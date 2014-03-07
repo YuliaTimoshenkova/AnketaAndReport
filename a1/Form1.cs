@@ -41,9 +41,9 @@ namespace a1
             var hd = new HobiData
             {
                 music = checkBox1.Checked,
-                sport = checkBox3.Checked,
+                sport = checkBox2.Checked,
                 age = trackBar1.Value,
-                other = checkBox2.Checked,
+                other = checkBox3.Checked,
                 name = textBox1.Text,
                 otherP = textBox2.Text,
                 voz = label2.Text,
@@ -81,9 +81,9 @@ namespace a1
             {
                 var s = name + " , возраст:   " + voz + " увлекается:  ";
                 if (music)
-                    s += " музыкой,";
+                    s += " музыкой, ";
                 if (sport)
-                    s += " спортом";
+                    s += " спортом, ";
                 if (other)
                     s += otherP;
                 return s;
